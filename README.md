@@ -1,88 +1,126 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19937089&assignment_repo_type=AssignmentRepo)
-# Testing and Debugging MERN Applications
+# 🐞 MERN Bug Tracker
 
-This assignment focuses on implementing comprehensive testing strategies for a MERN stack application, including unit testing, integration testing, and end-to-end testing, along with debugging techniques.
+A full-stack bug tracking application built with the MERN stack (MongoDB, Express, React, Node.js) with comprehensive testing and debugging implementations.
 
-## Assignment Overview
 
-You will:
-1. Set up testing environments for both client and server
-2. Write unit tests for React components and server functions
-3. Implement integration tests for API endpoints
-4. Create end-to-end tests for critical user flows
-5. Apply debugging techniques for common MERN stack issues
+## 🚀 Features
 
-## Project Structure
+- **User-friendly Interface** (Tailwind CSS)
+- **CRUD Operations** for bug tracking
+- **Testing**:
+  - Backend: Jest + Supertest
+  - Frontend: React Testing Library
+- **Debugging Tools**:
+  - Error Boundaries (React)
+  - Express error middleware
+  - Console logging
+- **Status Tracking**:
+  - Open / In-progress / Resolved
 
-```
-mern-testing/
-├── client/                 # React front-end
-│   ├── src/                # React source code
-│   │   ├── components/     # React components
-│   │   ├── tests/          # Client-side tests
-│   │   │   ├── unit/       # Unit tests
-│   │   │   └── integration/ # Integration tests
-│   │   └── App.jsx         # Main application component
-│   └── cypress/            # End-to-end tests
-├── server/                 # Express.js back-end
-│   ├── src/                # Server source code
-│   │   ├── controllers/    # Route controllers
-│   │   ├── models/         # Mongoose models
-│   │   ├── routes/         # API routes
-│   │   └── middleware/     # Custom middleware
-│   └── tests/              # Server-side tests
-│       ├── unit/           # Unit tests
-│       └── integration/    # Integration tests
-├── jest.config.js          # Jest configuration
-└── package.json            # Project dependencies
-```
+## 🛠️ Tech Stack
 
-## Getting Started
+- **Frontend**: React, Tailwind CSS, Vite
+- **Backend**: Node.js, Express, MongoDB
+- **Testing**: Jest, Supertest, React Testing Library
+- **Linting**: ESLint
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week6-Assignment.md` file
-4. Explore the starter code and existing tests
-5. Complete the tasks outlined in the assignment
+## 📦 Installation
 
-## Files Included
+### Prerequisites
+- Node.js (v16+)
+- MongoDB (local or Atlas URI)
+- PNPM (or npm/yarn)
 
-- `Week6-Assignment.md`: Detailed assignment instructions
-- Starter code for a MERN application with basic test setup:
-  - Sample React components with test files
-  - Express routes with test files
-  - Jest and testing library configurations
-  - Example tests for reference
+### Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/mern-bug-tracker.git
+   cd mern-bug-tracker
 
-## Requirements
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Basic understanding of testing concepts
+## Install dependencies for both frontend and backend:
 
-## Testing Tools
+# Backend
+cd server
+pnpm install
 
-- Jest: JavaScript testing framework
-- React Testing Library: Testing utilities for React
-- Supertest: HTTP assertions for API testing
-- Cypress/Playwright: End-to-end testing framework
-- MongoDB Memory Server: In-memory MongoDB for testing
+# Frontend
+cd ../client
+pnpm install
 
-## Submission
+## Set up environment variables:
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Create .env in server/:
 
-1. Complete all required tests (unit, integration, and end-to-end)
-2. Achieve at least 70% code coverage for unit tests
-3. Document your testing strategy in the README.md
-4. Include screenshots of your test coverage reports
-5. Demonstrate debugging techniques in your code
 
-## Resources
+MONGO_URI=mongodb://localhost:27017/
+PORT=5000
+## 🏃 Running the Application
+Start the backend:
+ cd server
+ pnpm start
 
-- [Jest Documentation](https://jestjs.io/docs/getting-started)
-- [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/intro/)
-- [Supertest Documentation](https://github.com/visionmedia/supertest)
-- [Cypress Documentation](https://docs.cypress.io/)
-- [MongoDB Testing Best Practices](https://www.mongodb.com/blog/post/mongodb-testing-best-practices) 
+Start the frontend (in another terminal):
+
+   cd client
+   pnpm dev
+
+Access the app at: http://localhost:5173
+
+## 🧪 Testing 
+
+Backend Tests
+
+  cd server
+  pnpm test
+Frontend Tests
+
+   cd client
+   pnpm test
+## 🐛 Debugging
+Backend
+  Use console.log() strategically
+  Debug with Chrome DevTools:
+  node --inspect server.js
+
+Frontend
+    React DevTools extension
+    Error Boundaries component
+     Browser console logs
+
+## 📂 Project Structure
+
+
+mern-bug-tracker/
+├── client/                  # Frontend (Vite + React)
+│   ├── src/
+│   │   ├── components/      # React components
+│   │   ├── tests/           # Frontend tests
+│   ├── vite.config.js
+├── server/                  # Backend (Express)
+│   ├── models/              # Mongoose models
+│   ├── routes/              # API routes
+│   ├── tests/               # Backend tests
+│   ├── server.js            # Express server
+
+## 📝 Documentation
+
+Testing Approach
+Error Handling
+
+## 🤝 Contributing
+
+Fork the project
+
+Create your feature branch
+Commit your changes 
+Push to the branch 
+Open a Pull Request
+
+## 📜 License
+Distributed under the MIT License.
+
+## ✉️ Contact
+Your Name - christinenyambwari@gmail.com
+
+Project Link: https://github.com/PLP-MERN-Stack-Development/week-6-test-debug-assignment-stine-ri.git
